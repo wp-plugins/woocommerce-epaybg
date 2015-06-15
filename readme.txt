@@ -3,7 +3,7 @@ Contributors: dimitrov.adrian
 Tags: WooCommerce, Payment, Gateway, epay.bg
 Requires at least: 3.8
 Tested up to: 4.2
-Stable tag: 1.0
+Stable tag: 1.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -11,8 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 == Description ==
 
 ePay.bg gateway for WooCommerce. More info at <a href="https://www.epay.bg/">epay.bg</a>.
-Supports all ePay.bg payment methods: ePay.bg login account, BORICA and
-EasyPay payments.
+Supports all ePay.bg payment methods: ePay.bg login account, BORICA and EasyPay payments.
 
 
 == Screenshots ==
@@ -29,6 +28,10 @@ EasyPay payments.
 
 
 == Changelog ==
+
+= 1.1 =
+* Fixed wrong IPN notify url
+* Added Bulgarian language
 
 = 1.0 =
 * First public release

@@ -4,7 +4,7 @@
  * Plugin Name: WooCommerce ePay.bg Gateway
  * Plugin URI: https://wordpress.org/plugins/woocommerce-epaybg/
  * Description: epaybg Checkout provides a fully integration with ePay.bg platform, secure way to collect and transmit credit card data to your payment gateway while keeping you in control of the design of your site <a target="_blank" href="https://www.epay.bg/img/x/readme_web.pdf">ePay.bg API integration README_WEB.pdf</a>.
- * Version: 1.0
+ * Version: 1.1
  * Author: dimitrov.adrian
  * Author URI: http://e01.scifi.bg/
  * Text Domain: woocommerce-epaybg
@@ -25,7 +25,7 @@ class WC_Epaybg_Checkout {
    *
    * @var string
    */
-  const VERSION = '1.0';
+  const VERSION = '1.1';
 
   /**
    * Instance of this class.

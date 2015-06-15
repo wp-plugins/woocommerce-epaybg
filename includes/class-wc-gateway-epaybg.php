@@ -74,18 +74,19 @@ class WC_Gateway_Epaybg extends WC_Payment_Gateway {
    */
   public function init_user_settings() {
 
-    $this->title                          = $this->get_option('title');
-    $this->description                    = $this->get_option('description');
-    $this->testmode                       = $this->get_option('testmode') == 'yes';
-    $this->debug                          = $this->get_option('debug') == 'yes';
-    $this->secret_key                     = preg_replace('#\s+#', '', $this->get_option('secret_key'));
-    $this->client_id                      = $this->get_option('client_id');
-    $this->epaybg_redirect                = $this->get_option('epaybg_redirect');
-    $this->epaybg_exptime                 = $this->get_option('epaybg_exptime', 12);
-    $this->epaybg_redirect_in_new_window  = $this->get_option('epaybg_redirect_in_new_window') == 'yes';
-    $this->ipn_key                        = md5(wp_salt() . $this->secret_key);
-    $this->notify_url                     = add_query_arg(array('hash' => $this->ipn_key), WC()->api_request_url('WC_Gateway_Epaybg'));
-    $this->invoice_prefix                 = substr(preg_replace('#[^\d]#', '', $this->get_option('invoice_prefix')), 0, 10);
+    $this->title                             = $this->get_option('title');
+    $this->description                       = $this->get_option('description');
+    $this->testmode                          = $this->get_option('testmode') == 'yes';
+    $this->debug                             = $this->get_option('debug') == 'yes';
+    $this->secret_key                        = preg_replace('#\s+#', '', $this->get_option('secret_key'));
+    $this->client_id                         = $this->get_option('client_id');
+    $this->epaybg_redirect                   = $this->get_option('epaybg_redirect');
+    $this->epaybg_exptime                    = $this->get_option('epaybg_exptime', 12);
+    $this->epaybg_redirect_in_new_window     = $this->get_option('epaybg_redirect_in_new_window') == 'yes';
+    $this->ipn_key                           = md5(wp_salt() . $this->secret_key);
+    $this->notify_url                        = add_query_arg(array('hash' => $this->ipn_key), WC()->api_request_url('WC_Gateway_Epaybg'));
+    $this->settings['epaybg_ipn_notify_url'] = $this->notify_url;
+    $this->invoice_prefix                    = substr(preg_replace('#[^\d]#', '', $this->get_option('invoice_prefix')), 0, 10);
   }
 
   /**
@@ -172,7 +173,7 @@ class WC_Gateway_Epaybg extends WC_Payment_Gateway {
         'type'                => 'textarea',
         'default'             => $this->notify_url,
         'custom_attributes'   => array(
-          'readonly' => 'readonly'
+          'readonly' => 'readonly',
         ),
         'disabled'            => 'disabled',
         'description'         => __('Value of the field depends of <code>Customer Number</code>, so if it is changed then change also this URL.<br /> Copy and paste this value in your profile under <code>URL for receiving notifications</code>', 'woocommerce-epaybg'),

@@ -1,0 +1,382 @@
+# Copyright (C) 2015 WooCommerce ePayBG
+# This file is distributed under the same license as the woocommerce-epaybg
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce ePayBG 1.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/woocommerce-epaybg\n"
+"POT-Creation-Date: 2015-06-15 20:01:59+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2015-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: ../woocommerce-epaybg.php:101
+#, php-format
+msgid "ePay.bg Checkout depends on the %s or later to work!"
+msgstr ""
+
+#: ../woocommerce-epaybg.php:101
+msgid "WooCommerce 2.2"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:34
+msgid "ePay.bg - EasyPay"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:35
+msgid ""
+"ePay.bg - EasyPay derivate allow customers to pay offline on EasyPay office "
+"or with BORICA ATM. It is works by givving the user to unique IDN number "
+"which is used to identify the order payment."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:80 ../includes/class-wc-
+#: gateway-epaybg.php:127 ../includes/class-wc-gateway-epaybg-directpay.php:60
+msgid "Enable/Disable"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:82
+msgid "Enable ePay.bg EasyPay Checkout"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:86 ../includes/class-wc-
+#: gateway-epaybg.php:133 ../includes/class-wc-gateway-epaybg-directpay.php:66
+msgid "Title"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:88 ../includes/class-wc-
+#: gateway-epaybg.php:135 ../includes/class-wc-gateway-epaybg-directpay.php:68
+msgid "This controls the title which the user sees during checkout."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:89
+msgid "EasyPay"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:92 ../includes/class-wc-
+#: gateway-epaybg.php:139 ../includes/class-wc-gateway-epaybg-directpay.php:72
+msgid "Description"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:94
+msgid "Pay in EasyPay offices."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:95 ../includes/class-wc-
+#: gateway-epaybg.php:142 ../includes/class-wc-gateway-epaybg-directpay.php:75
+msgid "This controls the description which the user sees during checkout."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:98 ../includes/class-wc-
+#: gateway-epaybg.php:193
+msgid "Transaction expiration"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:101 ../includes/class-wc-
+#: gateway-epaybg-easypay.php:102 ../includes/class-wc-gateway-epaybg-easypay.php:
+#: 103 ../includes/class-wc-gateway-epaybg-easypay.php:104 ../includes/class-wc-
+#: gateway-epaybg-easypay.php:105 ../includes/class-wc-gateway-epaybg-easypay.php:
+#: 106 ../includes/class-wc-gateway-epaybg.php:200 ../includes/class-wc-gateway-
+#: epaybg.php:201 ../includes/class-wc-gateway-epaybg.php:202
+#, php-format
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:111
+msgid "Send instructions"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:113
+msgid "Send mail with instructions about how to make the payment."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:134
+#, php-format
+msgid "Awaiting payment from EasyPay/B-Pay with code: %s"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:146
+msgid "EasyPay|B-Pay error while processing payment"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:168 ../includes/class-wc-
+#: gateway-epaybg-easypay.php:315 ../includes/class-wc-gateway-epaybg.php:332
+#, php-format
+msgid "Order: %s"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:224 ../includes/class-wc-
+#: gateway-epaybg-easypay.php:385
+#, php-format
+msgid "IDN Code: %s, valid until: %s"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:267
+msgid ""
+"\n"
+"To pay your order ({order_id}) with EasyPay or B-Pay service you can use "
+"next tutorials.\n"
+"\n"
+"Payment via EasyPay\n"
+"1. Go in some of the <a href=\"http://easypay.bg/?p=offices\" "
+"target=\"_blank\">EasyPay offices</a> (http://easypay.bg/?p=offices)\n"
+"2. Say your IDN code \"{idn_code}\" to office agent\n"
+"3. You will be asked to pay {order_total}\n"
+"\n"
+"Payment via ATM and B-Pay service\n"
+"If you prefere pay via ATM and B-Pay method then you can follow these steps.\n"
+"1. Go and find some of the <a href=\"https://www.epay.bg/en/?"
+"page=front_wiki&p=b-pay_atm\" target=\"_blank\">ATMs that supports BPay "
+"payments</a> (https://www.epay.bg/en/?page=front_wiki&p=b-pay_atm)\n"
+"2. Put your card in the ATM\n"
+"3. Select \"Other services\"\n"
+"4. Select \"B-Pay\"\n"
+"5. Enter Merchant code - \"60000\"\n"
+"6. Enter your IDN code \"{idn_code}\"\n"
+"7. You will be asked to pay {order_total}\n"
+"\n"
+"To do the this payment with some of these methods, your should take in mind "
+"that your IDN code is valid until {expire_date}, after that your IDN code "
+"will be invalid, and payment will be refused.\n"
+"\n"
+"More information you can found on www.easypay.bg and www.epay.bg/en"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:308
+#, php-format
+msgid "Hello %s,"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:310
+#, php-format
+msgid ""
+"You have new order on %s, this email include instructions how to pay the "
+"order."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:320
+msgid "Product"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:321
+msgid "Quantity"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:322
+msgid "Price"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:348
+msgid "Customer details"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:351
+msgid "Email:"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:354
+msgid "Tel:"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:360
+#, php-format
+msgid "You have new order (%s) from %s"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:62 ../includes/class-wc-gateway-epaybg.
+#: php:136
+msgid "ePay.bg"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:63
+msgid ""
+"ePay.bg main gateway works by sending the user to ePay.bg to enter their "
+"payment information. More about API integration on <a href=\"https://www.epay."
+"bg/img/x/readme_web.pdf\" target=\"_blank\">readme.pdf</a>"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:129
+msgid "Enable ePay.bg Checkout"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:141 ../includes/class-wc-gateway-
+#: epaybg-directpay.php:74
+msgid "Pay securely with your credit card."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:145
+msgid "Test mode"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:147
+msgid ""
+"Work in testing mode, no actual transfer will be done. Demo portal can be "
+"accessed on <a href=\"https://demo.epay.bg\" target=\"_blank\">demo.epay.bg</a>"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:151
+msgid "Debug Log"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:153
+msgid "Enable logging"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:155
+#, php-format
+msgid "Log ePay.bg events, such as IPN requests, inside <code>%s</code>"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:158
+msgid "Customer number"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:160
+msgid "Merchant customer ID number of the ePay.bg account."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:165
+msgid "Secret Key"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:167
+msgid "Your ePay.bg secret code (64char alphabet string)."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:172
+msgid "IPN Callback"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:179
+msgid ""
+"Value of the field depends of <code>Customer Number</code>, so if it is "
+"changed then change also this URL.<br /> Copy and paste this value in your "
+"profile under <code>URL for receiving notifications</code>"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:182
+msgid "Order ID prefix"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:185
+msgid ""
+"Set prefix for order IDs, this is useful in case to separate invoice numbers "
+"in ePay.bg.<br />Due to limitation of ePay.bg, this field <strong>accept "
+"only numeric values</strong>."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:196 ../includes/class-wc-gateway-
+#: epaybg.php:197 ../includes/class-wc-gateway-epaybg.php:198 ../includes/class-
+#: wc-gateway-epaybg.php:199
+#, php-format
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] ""
+msgstr[1] ""
+
+#: ../includes/class-wc-gateway-epaybg.php:207
+msgid "Redirection method"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:210
+msgid "Manual via button"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:211
+msgid "After page load"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:212 ../includes/class-wc-gateway-
+#: epaybg.php:213 ../includes/class-wc-gateway-epaybg.php:214 ../includes/class-
+#: wc-gateway-epaybg.php:215 ../includes/class-wc-gateway-epaybg.php:216
+#, php-format
+msgid "After %s secs"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:221
+msgid "Redirect in new window"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:223
+msgid "Open ePay.bg payment gateway in new window."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:240
+msgid "Gateway Disabled"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:241
+msgid ""
+"ePay.bg does not support your store currency. Supported currencies are: USD, "
+"EUR and BGN."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:249
+msgid ""
+"Settings are in limited range because this payment gateway is derivate of "
+"main ePay.bg"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:283
+msgid "Awaiting payment from ePay.bg"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:303
+msgid "Thank you - your order is now pending payment."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:343
+#, php-format
+msgid "Proceed to %s"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:358
+#, php-format
+msgid "You will be automatically redirected to ePay.bg in %s"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:374
+#, php-format
+msgid "If you are not redirected within next %s seconds, then %s"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:430
+#, php-format
+msgid "ePay.bg set invoice status to: %s"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:435
+#, php-format
+msgid "ePay.bg approved payment on %s with BORICA code: %s, transaction id: %s"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:449
+msgid "Order is denied by the payment service."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg.php:455
+msgid "Order is canceled due to expiration."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-directpay.php:34
+msgid "ePay.bg - BORICA"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-directpay.php:35
+msgid ""
+"ePay.bg - BORICA derivate allow customers to pay directly with their credit "
+"or debit cards. It is works by sending the user to BORICA platform to enter "
+"their payment information."
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-directpay.php:62
+msgid "Enable ePay.bg Direct Pay Checkout"
+msgstr ""
+
+#: ../includes/class-wc-gateway-epaybg-directpay.php:69
+msgid "BORICA"
+msgstr ""

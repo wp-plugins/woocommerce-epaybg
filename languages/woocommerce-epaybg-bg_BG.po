@@ -1,0 +1,453 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce ePayBG 1.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/woocommerce-epaybg\n"
+"POT-Creation-Date: 2015-06-15 20:01:59+00:00\n"
+"PO-Revision-Date: Mon Jun 15 2015 23:23:20 GMT+0300 (EEST)\n"
+"Last-Translator: e01 <dimitrov.adrian@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: Bulgarian\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;"
+"__:1;_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;"
+"_x:1,2c;_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;"
+"esc_attr__:1;esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;"
+"esc_html_x:1,2c;comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Loco-Target-Locale: bg_BG\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../includes/class-wc-gateway-epaybg.php:63
+msgid ""
+"ePay.bg main gateway works by sending the user to ePay.bg to enter their "
+"payment information. More about API integration on <a href=\"https://www.epay."
+"bg/img/x/readme_web.pdf\" target=\"_blank\">readme.pdf</a>"
+msgstr ""
+"ePay.bg е основен метод и работи като изпраща потребителя до страницата на "
+"ePay.bg за да въведе своите данни за разплащателната платформа. Повече за "
+"API интеграцията на <a href=\"https://www.epay.bg/img/x/readme_web.pdf\" "
+"target=\"_blank\">readme.pdf</a>"
+
+#: ../includes/class-wc-gateway-epaybg.php:160
+msgid "Merchant customer ID number of the ePay.bg account."
+msgstr "Клиентски номер от вашият ePay.bg профил."
+
+#: ../includes/class-wc-gateway-epaybg.php:179
+msgid ""
+"Value of the field depends of <code>Customer Number</code>, so if it is "
+"changed then change also this URL.<br /> Copy and paste this value in your "
+"profile under <code>URL for receiving notifications</code>"
+msgstr ""
+"Стойността зависи от <code>Клиентски номер</code>, за това ако правите "
+"промяна по тази стойност, трябва да промените и адреса.<br /> Копирайте тази "
+"стойност и я поставете във вашият профил в <code>\n"
+"URL за известяване<\n"
+"/code>"
+
+#: ../includes/class-wc-gateway-epaybg.php:185
+msgid ""
+"Set prefix for order IDs, this is useful in case to separate invoice numbers "
+"in ePay.bg.<br />Due to limitation of ePay.bg, this field <strong>accept "
+"only numeric values</strong>."
+msgstr ""
+"Задайте представка за номерата на поръчките. Това е полезно в случай на "
+"разграничаване на номерата на фактурите в ePay.bg.<br /> Поради ограничения "
+"на платформата на ePay.bg, това поле \n"
+"<strong>може да съдържа само числови стойности</strong>."
+
+#: ../includes/class-wc-gateway-epaybg.php:240
+msgid "Gateway Disabled"
+msgstr "Изключено"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:95 ../includes/class-wc-
+#: gateway-epaybg.php:142 ../includes/class-wc-gateway-epaybg-directpay.php:75
+msgid "This controls the description which the user sees during checkout."
+msgstr "Описание което ще се показва на клиента в страницата за поръчка."
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:98 ../includes/class-wc-
+#: gateway-epaybg.php:193
+msgid "Transaction expiration"
+msgstr "Транзакцията е изтекла"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:113
+msgid "Send mail with instructions about how to make the payment."
+msgstr "Изпращане на e-mail с инструкции как да извърши плащане."
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:134
+#, php-format
+msgid "Awaiting payment from EasyPay/B-Pay with code: %s"
+msgstr ""
+"В очакване на плащане от \n"
+"EasyPay/B-Pay с код: %s"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:146
+msgid "EasyPay|B-Pay error while processing payment"
+msgstr "EasyPay|B-Pay грешка при обработване на плащането"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:267
+msgid ""
+"\n"
+"To pay your order ({order_id}) with EasyPay or B-Pay service you can use "
+"next tutorials.\n"
+"\n"
+"Payment via EasyPay\n"
+"1. Go in some of the <a href=\"http://easypay.bg/?p=offices\" "
+"target=\"_blank\">EasyPay offices</a> (http://easypay.bg/?p=offices)\n"
+"2. Say your IDN code \"{idn_code}\" to office agent\n"
+"3. You will be asked to pay {order_total}\n"
+"\n"
+"Payment via ATM and B-Pay service\n"
+"If you prefere pay via ATM and B-Pay method then you can follow these steps.\n"
+"1. Go and find some of the <a href=\"https://www.epay.bg/en/?"
+"page=front_wiki&p=b-pay_atm\" target=\"_blank\">ATMs that supports BPay "
+"payments</a> (https://www.epay.bg/en/?page=front_wiki&p=b-pay_atm)\n"
+"2. Put your card in the ATM\n"
+"3. Select \"Other services\"\n"
+"4. Select \"B-Pay\"\n"
+"5. Enter Merchant code - \"60000\"\n"
+"6. Enter your IDN code \"{idn_code}\"\n"
+"7. You will be asked to pay {order_total}\n"
+"\n"
+"To do the this payment with some of these methods, your should take in mind "
+"that your IDN code is valid until {expire_date}, after that your IDN code "
+"will be invalid, and payment will be refused.\n"
+"\n"
+"More information you can found on www.easypay.bg and www.epay.bg/en"
+msgstr ""
+"\n"
+"За да заплатите вашата поръчка ({order_id}) с услугите на EasyPay или B-Pay "
+"следвайте следните стъпки.\n"
+"\n"
+"Плащане чрез EasyPay\n"
+"1. Идете до някой от следните <a href=\"http://easypay.bg/?p=offices\" "
+"target=\"_blank\">офиси на EasyPay</a> (http://easypay.bg/?p=offices)\n"
+"2. Кажете вашият IDN код \"{idn_code}\" на касиера\n"
+"3. Ще бъдете помолени да заплатите {order_total}\n"
+"\n"
+"Заплащане чрез ATM пост-терминал (банкомат) и B-Pay услугата\n"
+"Ако предпочитате заплащане чрез банкомат, тогава следвайте следните стъпки.\n"
+"1. Идете до някой от <a href=\"https://www.epay.bg/?page=front_wiki&p=b-"
+"pay_atm\" target=\"_blank\">банкомати с поддръжка на BPay разплащания</a> "
+"(https://www.epay.bg/?page=front_wiki&p=b-pay_atm)\n"
+"2. Вкарайте вашата карта в банкомата\n"
+"3. Изберете \"Други услуги\"\n"
+"4. Изберете \"B-Pay\"\n"
+"5. Въведете код на търговец - \"60000\"\n"
+"6. Въведете вашият IDN код \"{idn_code}\"\n"
+"7. \n"
+"Ще бъдете помолени да заплатите {order_total}\n"
+"\n"
+"\n"
+"\n"
+"За да извършите плащането с някой от следните методи, трябва да имате в "
+"предвид че IDN кода е валиден до  {expire_date}, след това IDN кодът няма да "
+"бъде валиден и евентуални плащания, ще бъдат отказвани.\n"
+"\n"
+"Повече информация на www.easypay.bg и www.epay.bg/en"
+
+#: ../includes/class-wc-gateway-epaybg.php:129
+msgid "Enable ePay.bg Checkout"
+msgstr "Включване на ePay.bg разплащания"
+
+#: ../includes/class-wc-gateway-epaybg.php:141 ../includes/class-wc-gateway-
+#: epaybg-directpay.php:74
+msgid "Pay securely with your credit card."
+msgstr "Заплащайте сигурно, чрез вашата кредитна или дебитна карта."
+
+#: ../includes/class-wc-gateway-epaybg.php:147
+msgid ""
+"Work in testing mode, no actual transfer will be done. Demo portal can be "
+"accessed on <a href=\"https://demo.epay.bg\" target=\"_blank\">demo.epay.bg</a>"
+msgstr ""
+"Текущия режим на работа е тестови, няма да бъдат извършвани никакви реални "
+"трансфери. Демонстрационния портал може да бъде достъпен на <a href=\"https:"
+"//demo.epay.bg\" target=\"_blank\">demo.epay.bg</a>"
+
+#: ../includes/class-wc-gateway-epaybg.php:155
+#, php-format
+msgid "Log ePay.bg events, such as IPN requests, inside <code>%s</code>"
+msgstr "Запис на ePay.bg събития, като IPN заявки в <code>%s</code>"
+
+#: ../includes/class-wc-gateway-epaybg.php:182
+msgid "Order ID prefix"
+msgstr "Представка пред номера на поръчката"
+
+#: ../includes/class-wc-gateway-epaybg.php:221
+msgid "Redirect in new window"
+msgstr "Препращане в нов прозорец"
+
+#: ../includes/class-wc-gateway-epaybg.php:223
+msgid "Open ePay.bg payment gateway in new window."
+msgstr "Отваряне на ePay.bg в нов прозорец."
+
+#: ../includes/class-wc-gateway-epaybg.php:241
+msgid ""
+"ePay.bg does not support your store currency. Supported currencies are: USD, "
+"EUR and BGN."
+msgstr ""
+"ePay.bg не поддържа валутата на вашият магазин. Поддържаните валути са: USD, "
+"EUR и BGN."
+
+#: ../includes/class-wc-gateway-epaybg.php:249
+msgid ""
+"Settings are in limited range because this payment gateway is derivate of "
+"main ePay.bg"
+msgstr ""
+"Настройките са ограничени защото този метод за разплащане наследява основния "
+"ePay.bg"
+
+#: ../includes/class-wc-gateway-epaybg.php:283
+msgid "Awaiting payment from ePay.bg"
+msgstr "Очаква плащане от ePay.bg"
+
+#: ../includes/class-wc-gateway-epaybg.php:303
+msgid "Thank you - your order is now pending payment."
+msgstr "Благодарим ви, вашата поръчка е в режим на очакване."
+
+#: ../includes/class-wc-gateway-epaybg.php:358
+#, php-format
+msgid "You will be automatically redirected to ePay.bg in %s"
+msgstr "Ще бъдете препратени автоматично към ePay.bg след %s"
+
+#: ../includes/class-wc-gateway-epaybg.php:374
+#, php-format
+msgid "If you are not redirected within next %s seconds, then %s"
+msgstr "Ако не сте препратени в следващите %s секунди, тогава идете на %s"
+
+#: ../includes/class-wc-gateway-epaybg-directpay.php:62
+msgid "Enable ePay.bg Direct Pay Checkout"
+msgstr "Включване на ePay.bg директно заплащане"
+
+#: ../woocommerce-epaybg.php:101
+#, php-format
+msgid "ePay.bg Checkout depends on the %s or later to work!"
+msgstr "ePay.bg разчита на %s или по-висока за да работи нормално!"
+
+#: ../woocommerce-epaybg.php:101
+msgid "WooCommerce 2.2"
+msgstr "WooCommerce 2.2"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:34
+msgid "ePay.bg - EasyPay"
+msgstr "ePay.bg - EasyPay"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:35
+msgid ""
+"ePay.bg - EasyPay derivate allow customers to pay offline on EasyPay office "
+"or with BORICA ATM. It is works by givving the user to unique IDN number "
+"which is used to identify the order payment."
+msgstr ""
+"ePay.bg - EasyPay разновидност позволяваща заплащане оф-лайн през каса на  "
+"EasyPay или пост-терминал (банкомат) на БОРИКА. Работи, чрез доставяне на "
+"клиента уникален IDN  номер, който е нужен за разпознаване на поръчката за "
+"разплащането."
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:80 ../includes/class-wc-
+#: gateway-epaybg.php:127 ../includes/class-wc-gateway-epaybg-directpay.php:60
+msgid "Enable/Disable"
+msgstr "Включване/Изключване"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:82
+msgid "Enable ePay.bg EasyPay Checkout"
+msgstr "Включване на ePay.bg EasyPay разплащането"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:86 ../includes/class-wc-
+#: gateway-epaybg.php:133 ../includes/class-wc-gateway-epaybg-directpay.php:66
+msgid "Title"
+msgstr "Заглавие"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:88 ../includes/class-wc-
+#: gateway-epaybg.php:135 ../includes/class-wc-gateway-epaybg-directpay.php:68
+msgid "This controls the title which the user sees during checkout."
+msgstr "Заглавие което се показва когато клиента е в процес на заплащане"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:89
+msgid "EasyPay"
+msgstr "EasyPay"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:92 ../includes/class-wc-
+#: gateway-epaybg.php:139 ../includes/class-wc-gateway-epaybg-directpay.php:72
+msgid "Description"
+msgstr "Описание"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:94
+msgid "Pay in EasyPay offices."
+msgstr "Плащане в каса на EasyPay"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:101 ../includes/class-wc-
+#: gateway-epaybg-easypay.php:102 ../includes/class-wc-gateway-epaybg-easypay.php:
+#: 103 ../includes/class-wc-gateway-epaybg-easypay.php:104 ../includes/class-wc-
+#: gateway-epaybg-easypay.php:105 ../includes/class-wc-gateway-epaybg-easypay.php:
+#: 106 ../includes/class-wc-gateway-epaybg.php:200 ../includes/class-wc-gateway-
+#: epaybg.php:201 ../includes/class-wc-gateway-epaybg.php:202
+#, php-format
+msgid "%s day"
+msgid_plural "%s days"
+msgstr[0] "%s ден"
+msgstr[1] "%s дни"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:111
+msgid "Send instructions"
+msgstr "Изпращане на инструкции"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:168 ../includes/class-wc-
+#: gateway-epaybg-easypay.php:315 ../includes/class-wc-gateway-epaybg.php:332
+#, php-format
+msgid "Order: %s"
+msgstr "Поръчка: %s"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:224 ../includes/class-wc-
+#: gateway-epaybg-easypay.php:385
+#, php-format
+msgid "IDN Code: %s, valid until: %s"
+msgstr "IDN Код: %s, валиден до: %s"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:308
+#, php-format
+msgid "Hello %s,"
+msgstr "Здравейте %s,"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:310
+#, php-format
+msgid ""
+"You have new order on %s, this email include instructions how to pay the "
+"order."
+msgstr ""
+"Имате нова поръчка от %s, настоящият e-mail съдържа инструкции как да "
+"заплатите вашата поръчка."
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:320
+msgid "Product"
+msgstr "Продукт"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:321
+msgid "Quantity"
+msgstr "Количество"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:322
+msgid "Price"
+msgstr "Цена"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:348
+msgid "Customer details"
+msgstr "Информация за клиент"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:351
+msgid "Email:"
+msgstr "Email:"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:354
+msgid "Tel:"
+msgstr "Тел.:"
+
+#: ../includes/class-wc-gateway-epaybg-easypay.php:360
+#, php-format
+msgid "You have new order (%s) from %s"
+msgstr "Имате нова поръчка (%s) от %s"
+
+#: ../includes/class-wc-gateway-epaybg.php:62 ../includes/class-wc-gateway-epaybg.
+#: php:136
+msgid "ePay.bg"
+msgstr "ePay.bg"
+
+#: ../includes/class-wc-gateway-epaybg.php:145
+msgid "Test mode"
+msgstr "Тестов режим"
+
+#: ../includes/class-wc-gateway-epaybg.php:151
+msgid "Debug Log"
+msgstr "Регистър за проследяване на грешки"
+
+#: ../includes/class-wc-gateway-epaybg.php:153
+msgid "Enable logging"
+msgstr "Включване на регистъра за проследяване на грешки"
+
+#: ../includes/class-wc-gateway-epaybg.php:158
+msgid "Customer number"
+msgstr "Клиентски номер"
+
+#: ../includes/class-wc-gateway-epaybg.php:165
+msgid "Secret Key"
+msgstr "Секретен ключ"
+
+#: ../includes/class-wc-gateway-epaybg.php:167
+msgid "Your ePay.bg secret code (64char alphabet string)."
+msgstr "Вашият ePay.bg секретен код (64 символен низ)."
+
+#: ../includes/class-wc-gateway-epaybg.php:172
+msgid "IPN Callback"
+msgstr "IPN адрес за известяване"
+
+#: ../includes/class-wc-gateway-epaybg.php:196 ../includes/class-wc-gateway-
+#: epaybg.php:197 ../includes/class-wc-gateway-epaybg.php:198 ../includes/class-
+#: wc-gateway-epaybg.php:199
+#, php-format
+msgid "%s hour"
+msgid_plural "%s hours"
+msgstr[0] "%s час"
+msgstr[1] "%s часа"
+
+#: ../includes/class-wc-gateway-epaybg.php:207
+msgid "Redirection method"
+msgstr "Метод за препращане"
+
+#: ../includes/class-wc-gateway-epaybg.php:210
+msgid "Manual via button"
+msgstr "Ръчно, чрез бутон"
+
+#: ../includes/class-wc-gateway-epaybg.php:211
+msgid "After page load"
+msgstr "След зареждане на страницата"
+
+#: ../includes/class-wc-gateway-epaybg.php:212 ../includes/class-wc-gateway-
+#: epaybg.php:213 ../includes/class-wc-gateway-epaybg.php:214 ../includes/class-
+#: wc-gateway-epaybg.php:215 ../includes/class-wc-gateway-epaybg.php:216
+#, php-format
+msgid "After %s secs"
+msgstr "След %s секунди"
+
+#: ../includes/class-wc-gateway-epaybg.php:343
+#, php-format
+msgid "Proceed to %s"
+msgstr "Обработване на %s"
+
+#: ../includes/class-wc-gateway-epaybg.php:430
+#, php-format
+msgid "ePay.bg set invoice status to: %s"
+msgstr "ePay.bg зададе статус фактириране на: %s"
+
+#: ../includes/class-wc-gateway-epaybg.php:435
+#, php-format
+msgid "ePay.bg approved payment on %s with BORICA code: %s, transaction id: %s"
+msgstr "ePay.bg удобри плащане по %s с БОРИКА код: %s, транзакция: %s"
+
+#: ../includes/class-wc-gateway-epaybg.php:449
+msgid "Order is denied by the payment service."
+msgstr "Поръчката е отказана от ePay.bg"
+
+#: ../includes/class-wc-gateway-epaybg.php:455
+msgid "Order is canceled due to expiration."
+msgstr "Поръчката е отказана поради давност."
+
+#: ../includes/class-wc-gateway-epaybg-directpay.php:34
+msgid "ePay.bg - BORICA"
+msgstr "ePay.bg - БОРИКА"
+
+#: ../includes/class-wc-gateway-epaybg-directpay.php:35
+msgid ""
+"ePay.bg - BORICA derivate allow customers to pay directly with their credit "
+"or debit cards. It is works by sending the user to BORICA platform to enter "
+"their payment information."
+msgstr ""
+"ePay.bg - BORICA разновидност позволяваща заплащане чрез кредитни или "
+"дебитни карти. Работи като препраща клиента до платформата на БОРИКА за да "
+"въведе своите картови данни.\n"
+
+#: ../includes/class-wc-gateway-epaybg-directpay.php:69
+msgid "BORICA"
+msgstr "БОРИКА"
