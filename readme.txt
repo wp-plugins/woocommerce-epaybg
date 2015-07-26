@@ -1,6 +1,6 @@
 === WooCommerce ePay.bg ===
 Contributors: dimitrov.adrian
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=U3Q8DXVKKU5BL&lc=BG&item_name=WooCommerce%20ePay%2ebg&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
+Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=U3Q8DXVKKU5BL&lc=BG&item_name=WooCommerce%20ePay%2ebg&item_number=wpwcepaybg&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted
 Tags: WooCommerce, Payment, Gateway, epay.bg
 Requires at least: 3.8
 Tested up to: 4.2
