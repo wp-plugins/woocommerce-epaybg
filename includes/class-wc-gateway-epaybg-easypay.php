@@ -67,6 +67,7 @@ class WC_Gateway_Epaybg_EasyPay extends WC_Gateway_Epaybg {
     $this->description                    = $this->get_option('description');
     $this->epaybg_exptime                 = $this->get_option('epaybg_exptime', 48);
     $this->send_instructions_mail         = 'yes' == $this->get_option('send_instructions_mail', 'yes');
+    $this->enabled                        = $this->title && $this->get_option('enabled') == 'yes' ? 'yes' : 'no';
   }
 
   /**
@@ -108,7 +109,7 @@ class WC_Gateway_Epaybg_EasyPay extends WC_Gateway_Epaybg {
         'default'     => 48,
       ),
       'send_instructions_mail' => array(
-        'title'       => __('Send instructions', 'woocommerce'),
+        'title'       => __('Send instructions', 'woocommerce-epaybg'),
         'type'        => 'checkbox',
         'label'       => __('Send mail with instructions about how to make the payment.', 'woocommerce-epaybg'),
         'default'     => 'yes'

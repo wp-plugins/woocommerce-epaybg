@@ -87,6 +87,7 @@ class WC_Gateway_Epaybg extends WC_Payment_Gateway {
     $this->notify_url                        = add_query_arg(array('hash' => $this->ipn_key), WC()->api_request_url('WC_Gateway_Epaybg'));
     $this->settings['epaybg_ipn_notify_url'] = $this->notify_url;
     $this->invoice_prefix                    = substr(preg_replace('#[^\d]#', '', $this->get_option('invoice_prefix')), 0, 10);
+    $this->enabled                           = $this->title && $this->get_option('enabled') == 'yes' ? 'yes' : 'no';
   }
 
   /**

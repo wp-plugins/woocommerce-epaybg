@@ -30,6 +30,10 @@ Supports all ePay.bg payment methods: ePay.bg login account, BORICA and EasyPay 
 
 == Changelog ==
 
+= 1.2 =
+* Fixed initial enabled setting value (https://wordpress.org/support/topic/easypay-is-always-visible-at-checkout)
+* Fixed required minimum version to WC2.2
+
 = 1.1 =
 * Fixed wrong IPN notify url
 * Added Bulgarian language

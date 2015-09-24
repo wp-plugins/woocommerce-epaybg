@@ -47,6 +47,7 @@ class WC_Gateway_Epaybg_DirectPay extends WC_Gateway_Epaybg {
   public function init_user_settings() {
     $this->title                          = $this->get_option('title');
     $this->description                    = $this->get_option('description');
+    $this->enabled                        = $this->title && $this->get_option('enabled') == 'yes' ? 'yes' : 'no';
   }
 
   /**
