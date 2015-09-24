@@ -25,7 +25,7 @@ class WC_Epaybg_Checkout {
    *
    * @var string
    */
-  const VERSION = '1.1';
+  const VERSION = '1.2';
 
   /**
    * Instance of this class.
