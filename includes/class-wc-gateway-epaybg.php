@@ -78,6 +78,7 @@ class WC_Gateway_Epaybg extends WC_Payment_Gateway {
     $this->description                       = $this->get_option('description');
     $this->testmode                          = $this->get_option('testmode') == 'yes';
     $this->debug                             = $this->get_option('debug') == 'yes';
+    $this->disable_plugin_ipn_key_check      = $this->get_option('disable_plugin_ipn_key_check') == 'yes';
     $this->secret_key                        = preg_replace('#\s+#', '', $this->get_option('secret_key'));
     $this->client_id                         = $this->get_option('client_id');
     $this->epaybg_redirect                   = $this->get_option('epaybg_redirect');
@@ -178,6 +179,12 @@ class WC_Gateway_Epaybg extends WC_Payment_Gateway {
         ),
         'disabled'            => 'disabled',
         'description'         => __('Value of the field depends of <code>Customer Number</code>, so if it is changed then change also this URL.<br /> Copy and paste this value in your profile under <code>URL for receiving notifications</code>', 'woocommerce-epaybg'),
+      ),
+      'disable_plugin_ipn_key_check' => array(
+        'title'               => __('Disable IPN hash key heck', 'woocommerce-epaybg'),
+        'type'                => 'checkbox',
+        'default'             => FALSE,
+        'description'         => __('Normally you shound not touch this, but if you are in case you have problems with order processing after they are payed and have errors in the log that IPN can not be checked, then disable this protection. Note that this is additional security check for the incomming requests from ePay.bg', 'woocommerce-epaybg'),
       ),
       'invoice_prefix' => array(
         'title'               => __('Order ID prefix', 'woocommerce-epaybg'),
@@ -388,11 +395,11 @@ class WC_Gateway_Epaybg extends WC_Payment_Gateway {
    */
   public function epaybg_ipn_response() {
 
-    if (empty($_GET['hash']) || $_GET['hash'] != $this->ipn_key) {
-      // TODO: incorrect key
-      if (empty($_POST['encoded'])) {
-        $this->log('ERROR: IPN response incorrect hash');
-      }
+    if (
+      (!$this->disable_plugin_ipn_key_check && (empty($_GET['hash']) || $_GET['hash'] != $this->ipn_key))
+      || empty($_POST['encoded'])
+    ) {
+      $this->log('ERROR: IPN response incorrect hash');
       return 0;
     }
 

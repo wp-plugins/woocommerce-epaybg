@@ -30,6 +30,9 @@ Supports all ePay.bg payment methods: ePay.bg login account, BORICA and EasyPay 
 
 == Changelog ==
 
+= 1.3 =
+* Added option to disable IPN check
+
 = 1.2 =
 * Fixed initial enabled setting value (https://wordpress.org/support/topic/easypay-is-always-visible-at-checkout)
 * Fixed required minimum version to WC2.2
