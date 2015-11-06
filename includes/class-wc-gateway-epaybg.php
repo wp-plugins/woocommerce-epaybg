@@ -395,11 +395,8 @@ class WC_Gateway_Epaybg extends WC_Payment_Gateway {
    */
   public function epaybg_ipn_response() {
 
-    if (
-      (!$this->disable_plugin_ipn_key_check && (empty($_GET['hash']) || $_GET['hash'] != $this->ipn_key))
-      || empty($_POST['encoded'])
-    ) {
-      $this->log('ERROR: IPN response incorrect hash');
+    if (!$this->disable_plugin_ipn_key_check && (empty($_GET['hash']) || $_GET['hash'] != $this->ipn_key)) {
+      $this->log('ERROR: IPN response incorrect hash: ' . (empty($_GET['hash']) ? 'empty' : '"' . $_GET['hash'] . '"'));
       return 0;
     }
 
